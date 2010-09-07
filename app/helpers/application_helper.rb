@@ -1,4 +1,13 @@
 module ApplicationHelper
+  
+  def logo
+    logo_graphic = "public/images/logo.png"
+    if @logo.nil?
+      logo_graphic
+    else
+      "#{@logo}"
+    end  
+  end
 
   # Return a title on a per-page basis.
   def title
